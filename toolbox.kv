@@ -1,5 +1,6 @@
 # File name: toolbox.kv
-<ToolButton@ToggleButton>:
+#:import toolbox toolbox
+<ToolButton>:
 	size_hint: None,None
 	size: 48,48
 	group: 'tool'
@@ -21,6 +22,6 @@
 		canvas:
 			Line:
 				points: 10,10,38,38
-	ToolButton:
+	ToolStickman:
 		StickMan:
 			pos_hint: {'center_x':.5,'center_y':.5}
