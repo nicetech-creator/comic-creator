@@ -1,5 +1,10 @@
 # File name: drawingspace.kv
 <DrawingSpace@RelativeLayout>:
-	Label:
-		markup: True
-		text: '[size=32px][color=#3e6643]The[/color][sub]Comic[/sub] [i][b]Creator[/b][/i][/size]'
+	StickMan:
+		pos_hint: {'center_x':.5,'center_y':.5}
+		canvas.before:
+			Translate:
+				xy: -self.width/2, -self.height/2
+			Scale:
+				xyz: 4,4,0
+	StickMan:
